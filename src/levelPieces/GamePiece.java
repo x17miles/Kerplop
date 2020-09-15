@@ -18,7 +18,7 @@ public abstract class GamePiece implements Drawable {
 	private String name ;
 	// Stores the piece location, which will be needed to interact
 	// with the player. 
-	private int location;
+	protected int location;
 
 	/**
 	 * Constructor for the game piece
