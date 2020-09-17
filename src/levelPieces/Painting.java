@@ -14,7 +14,6 @@ public class Painting implements Drawable{
 	}
 	@Override
 	public void draw() {
-		// TODO Auto-generated method stub
 		System.out.print(symbol);
 	}
 	

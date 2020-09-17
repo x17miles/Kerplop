@@ -12,8 +12,8 @@ public class Torch extends GamePiece {
 
 	@Override
 	public InteractionResult interact(Drawable[] gameBoard, int playerLocation) {
-		// TODO Auto-generated method stub
-		return null;
+		if(playerLocation == this.location) System.out.println("You stand in the light of a torch.");
+		return InteractionResult.NONE;
 	}
 
 }

@@ -13,7 +13,10 @@ public class Pleeb extends GamePiece {
 	@Override
 	public InteractionResult interact(Drawable[] gameBoard, int playerLocation) {
 		// TODO Auto-generated method stub
-		return null;
+		if(this.location == playerLocation) {
+			System.out.println("A pleeb stands beside you. They just stare at you, but do nothing.");
+		}
+		return InteractionResult.NONE;
 	}
 
 }
