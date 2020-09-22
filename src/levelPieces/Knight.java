@@ -31,7 +31,7 @@ public class Knight extends GamePiece implements Moveable{
 			//if you land directly on knight's space, he hits you
 			return InteractionResult.HIT;
 		}
-		return null;
+		return InteractionResult.NONE;
 	}
 
 	@Override

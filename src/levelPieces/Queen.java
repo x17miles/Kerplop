@@ -25,7 +25,7 @@ public class Queen extends GamePiece implements Moveable{
 			this.pointAqd = false;
 			return InteractionResult.GET_POINT;
 		}
-		return null;
+		return InteractionResult.NONE;
 	}
 
 	@Override

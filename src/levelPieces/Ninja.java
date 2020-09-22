@@ -46,7 +46,7 @@ public class Ninja extends GamePiece implements Moveable {
 		//move randomly by 1 space, aside from jumping on something else or hitting the bounds of the level
 		if(rnd.nextBoolean() && this.location != 20 && gameBoard[this.location+1] == null) {
 			this.location++;
-		} else if (gameBoard[this.location - 1] == null && this.location > 0){
+		} else if ( this.location > 0 && gameBoard[this.location - 1] == null){
 			this.location--;
 		}
 		gameBoard[this.location] = this;

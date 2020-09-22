@@ -14,7 +14,7 @@ public class Rose extends GamePiece {
 		if (playerLocation == this.location) {
 			return InteractionResult.GET_POINT;
 		}
-		return null;
+		return InteractionResult.NONE;
 	}
 
 }
